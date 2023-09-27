@@ -1,9 +1,13 @@
-export const APP_NAME = 'personal-leap';
+export const APP_NAME = 'vscode-luca';
 
 export const API_URL = '';
-export const MOCK_API_URL = process.env.REACT_APP_MOCK_API_URL as string;
 
-export const ENVIROMENT = process.env.NODE_ENV;
+export const GITHUB_ID = process.env.GITHUB_ID as string;
+export const GITHUB_SECRET = process.env.GITHUB_SECRET as string;
+export const NEXTAUTH_URL = process.env.NEXTAUTH_URL as string;
+export const NEXTAUTH_SECRET = process.env.NEXTAUTH_SECRET as string;
+
+export const ENVIRONMENT = process.env.NODE_ENV;
 export const MOCK_ENABLED = process.env.NEXT_PUBLIC_API_MOCKING as string;
 
 export const DEFAULT_PUBLIC_PAGE = '/login';
@@ -22,7 +26,3 @@ export const JWT_REFRESH_SECRET = '123456789' as string;
 export const JWT_REFRESH_EXPIRES_IN = 50;
 
 export const IS_CLIENT_SERVER = typeof window !== 'undefined';
-
-export const NEXTAUTH_SECRET = '5f5473e9dbed9a1dc9924772cb3f1851';
-export const GITHUB_ID = 'ca5ade7d032539fffd89';
-export const GITHUB__SECRET = '64de6bb1c98ad2294d169eda299e2a6c1b019a26';

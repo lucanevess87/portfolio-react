@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { getServerSession } from 'next-auth';
 
 import { Providers } from '@/providers';
 
-import { OPTIONS } from './api/auth/[...nextauth]/route';
 import '../styles/global.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,11 +13,10 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const session = await getServerSession(OPTIONS);
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <Providers session={session}>
+        <Providers>
           <div className="relative z-10 items-center justify-center h-screen p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
             {children}
           </div>

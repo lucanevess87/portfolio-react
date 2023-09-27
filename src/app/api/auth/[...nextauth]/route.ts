@@ -1,18 +1,15 @@
-import NextAuth, { NextAuthOptions } from 'next-auth';
+import NextAuth from 'next-auth';
 
-import { providers } from '@/api/auth/providers';
+import { provider } from '@/api/auth/providers';
 import { NEXTAUTH_SECRET } from '@/config';
 
-export const OPTIONS: NextAuthOptions = {
-  providers: [...providers],
-  session: {
-    strategy: 'jwt',
+const handler = NextAuth({
+  providers: [provider],
+  debug: true,
+  secret: NEXTAUTH_SECRET,
+  theme: {
+    colorScheme: 'dark',
   },
-  jwt: {
-    secret: NEXTAUTH_SECRET,
-  },
-};
-
-const handler = NextAuth(OPTIONS);
+});
 
 export { handler as GET, handler as POST };
