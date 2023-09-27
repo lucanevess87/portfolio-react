@@ -23,6 +23,6 @@ export const JWT_REFRESH_EXPIRES_IN = 50;
 
 export const IS_CLIENT_SERVER = typeof window !== 'undefined';
 
-export const NEXTAUTH_SECRET = '6d7c7fb5b9ebe1ac449f7993359a88b2';
+export const NEXTAUTH_SECRET = '5f5473e9dbed9a1dc9924772cb3f1851';
 export const GITHUB_ID = 'ca5ade7d032539fffd89';
 export const GITHUB__SECRET = '64de6bb1c98ad2294d169eda299e2a6c1b019a26';
