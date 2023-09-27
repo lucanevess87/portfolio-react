@@ -1,6 +1,6 @@
 import { dehydrate } from '@tanstack/react-query';
 
-import { CustomCommand } from '@/components/commom';
+import { CustomCommand } from '@/components/common';
 import HydrateClient from '@/components/HydrateClient/HydrateClient';
 import getQueryClient from '@/lib/get-query-client';
 
@@ -19,7 +19,7 @@ export default async function ServerSide() {
 
   return (
     <HydrateClient state={dehydratedState}>
-      <div className=" p-20 flex flex-col min-h-screen justify-center gap-10">
+      <div>
         ServerSide
         <CustomCommand />
       </div>
