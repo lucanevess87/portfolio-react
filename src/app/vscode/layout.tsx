@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function VSCodeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col w-full h-full rounded-md shadow-md bg-brand-background-dark">
+    <div className="flex flex-col w-full h-[55rem] p-2 pb-0 shadow-xl rounded-xl bg-brand-background-dark">
       <div className="flex items-start justify-between px-3 bg-brand-background">
         <div className="flex items-center gap-2 my-2">
           <Link href="/" className="w-3 h-3 bg-red-500 rounded-full" />

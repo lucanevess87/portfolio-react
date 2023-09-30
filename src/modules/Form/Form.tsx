@@ -56,7 +56,7 @@ export const Form = () => {
 
   return (
     <FormProvider {...formMethods}>
-      <form className="flex justify-center gap-10 mx-10 my-auto" onSubmit={handleSubmit(onSubmit)}>
+      <form className="flex justify-center h-full gap-10 p-12" onSubmit={handleSubmit(onSubmit)}>
         <StaticForm />
         <RecursiveForm />
       </form>

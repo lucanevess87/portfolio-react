@@ -66,7 +66,7 @@ const navigation = [
 export const Explorer = () => {
   const [open, setOpen] = useState<string>('item-1');
   return (
-    <div className="flex flex-col p-4 border-r border-brand-text bg-brand-background-medium">
+    <div className="flex flex-col p-4 pb-0 border-r border-brand-text bg-brand-background-medium">
       <div className="flex items-start justify-between">
         <p className="text-sm text-brand-text">EXPLORER</p>
         <MoreHorizontal size={20} strokeWidth={1.5} className="stroke-brand-text" />

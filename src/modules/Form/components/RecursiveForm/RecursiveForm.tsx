@@ -21,7 +21,7 @@ export const RecursiveForm = () => {
   };
 
   return (
-    <section className="flex flex-col h-[40rem] w-1/2 gap-4 p-6 bg-white rounded-lg">
+    <section className="flex flex-col w-1/2 h-full gap-4 p-6 overflow-y-auto bg-white rounded-lg">
       <div>
         <h1 className="text-2xl font-bold">Form</h1>
         <span className="text-sm opacity-75">Recursive form</span>

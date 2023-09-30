@@ -9,7 +9,7 @@ export const Navigation = () => {
   const archive = params.split('/')[params.split('/').length - 1];
 
   return (
-    <section className="flex w-full bg-opacity-40 bg-brand-background-heavy">
+    <section className="flex bg-opacity-40 bg-brand-background-heavy">
       {archive && (
         <div className="flex items-center gap-2 px-4 py-1 border border-b-0 border-l-0 border-brand-text bg-brand-background-dark">
           <FaReact className="text-brand-text" />

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center w-full h-full mx-auto my-auto">
+    <div className="flex items-center justify-center w-full h-full">
       <Link href="/vscode" className="flex flex-col items-center">
         <Code2 />
         <p className="text-white bold">VSCode</p>
