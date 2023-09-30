@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang="pt-br">
       <body className={inter.className}>
         <Providers>
-          <div className="relative z-10 items-center justify-center h-screen p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+          <div className="relative z-10 items-center justify-center w-screen h-screen p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
             {children}
           </div>
         </Providers>

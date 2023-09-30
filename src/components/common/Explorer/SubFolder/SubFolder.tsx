@@ -18,6 +18,7 @@ type SubFolderProps = {
     id: string;
     name: string;
     content: string;
+    route: string;
   }[];
 };
 
@@ -40,14 +41,14 @@ export const SubFolder = ({ folders }: SubFolderProps) => {
       {folders.map((subFolder) => {
         return (
           <AccordionItem key={subFolder.id} value={subFolder.id} className="border-none">
-            <AccordionTrigger className="py-1 hover:no-underline hover:bg-brand-background-light">
+            <AccordionTrigger className="gap-10 py-1 hover:no-underline hover:bg-brand-background-light">
               <div className="flex items-center justify-start gap-2">
                 <Folder className="stroke-brand-text" size={15} />
                 <p className="text-sm font-normal text-brand-text">{subFolder.name}</p>
               </div>
             </AccordionTrigger>
             <AccordionContent className="ml-2">
-              <Link href={`/vscode/${subFolder.content}`} className="flex items-center gap-2">
+              <Link href={`/vscode/${subFolder.route}`} className="flex items-center gap-2">
                 <FaReact className="text-brand-text" />
                 <p className="text-sm font-normal text-[#8F8CA8] hover:text-white">
                   {subFolder.content}

@@ -21,36 +21,43 @@ const navigation = [
         id: 'item-1',
         name: 'Map',
         content: 'Map.tsx',
+        route: 'map',
       },
       {
         id: 'item-2',
         name: 'Form',
         content: 'Form.tsx',
+        route: 'form',
       },
       {
         id: 'item-3',
         name: 'Table',
         content: 'Table.tsx',
+        route: 'table',
       },
       {
         id: 'item-4',
         name: 'Charts',
         content: 'Charts.tsx',
+        route: 'charts',
       },
       {
         id: 'item-5',
         name: 'Player',
         content: 'Player.tsx',
+        route: 'player',
       },
       {
         id: 'item-6',
         name: 'ReactQuery',
         content: 'ReactQuery.tsx',
+        route: 'react-query',
       },
       {
         id: 'item-7',
         name: 'Axios',
         content: 'Axios.ts',
+        route: 'axios',
       },
     ],
   },
@@ -59,7 +66,7 @@ const navigation = [
 export const Explorer = () => {
   const [open, setOpen] = useState<string>('item-1');
   return (
-    <div className="flex flex-col p-4 mt-2 border-r border-brand-text w-60 bg-brand-background-medium">
+    <div className="flex flex-col p-4 border-r border-brand-text bg-brand-background-medium">
       <div className="flex items-start justify-between">
         <p className="text-sm text-brand-text">EXPLORER</p>
         <MoreHorizontal size={20} strokeWidth={1.5} className="stroke-brand-text" />

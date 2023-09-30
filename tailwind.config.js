@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         brand: {
           text: '#C4CBDA',
+          purple: '#633BBC',
           background: {
             light: '#31343D',
             medium: '#24272E',
