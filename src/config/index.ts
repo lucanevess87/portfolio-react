@@ -26,3 +26,5 @@ export const JWT_REFRESH_SECRET = '123456789' as string;
 export const JWT_REFRESH_EXPIRES_IN = 50;
 
 export const IS_CLIENT_SERVER = typeof window !== 'undefined';
+export const MAPBOX_TOKEN =
+  'pk.eyJ1IjoidGVjaC1sb29taSIsImEiOiJjbGtiN29iYmMwYmNzM2VueHpuMDVsNzU0In0.ES0Sx98e8dS-IgjSpjmSOw';
