@@ -5,7 +5,7 @@ import VectorSource from 'ol/source/Vector';
 import { Icon, Style } from 'ol/style';
 import { memo, useEffect, useMemo } from 'react';
 
-import { program } from '@/assets/icons/programado';
+import { concluded } from '@/assets/icons/concluido';
 
 import { useMap } from '../../context/MapContext';
 
@@ -43,7 +43,7 @@ const Base = ({ data, isActive = true }: PointsLayerProps): JSX.Element | null =
               anchorXUnits: 'fraction',
               anchorYUnits: 'pixels',
               scale: 0.85,
-              src: 'data:image/svg+xml;utf8,' + encodeURIComponent(program),
+              src: 'data:image/svg+xml;utf8,' + encodeURIComponent(concluded),
             }),
           }),
         );

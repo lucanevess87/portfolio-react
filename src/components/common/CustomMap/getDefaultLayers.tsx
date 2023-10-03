@@ -18,7 +18,7 @@ export const layers: CustomBaseLayer[] = [
   {
     name: 'mapbox',
     source: new XYZ({
-      url: `https://api.mapbox.com/styles/v1/tech-loomi/clilriln4010p01p1g1qrf51d/tiles/256/{z}/{x}/{y}?access_token=${MAPBOX_TOKEN}`,
+      url: `https://api.mapbox.com/styles/v1/lucanevess/cln9n1lex07en01p99yj11349/tiles/256/{z}/{x}/{y}?access_token=${MAPBOX_TOKEN}`,
     }),
     visible: true,
   },
