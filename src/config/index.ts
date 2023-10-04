@@ -1,13 +1,11 @@
 export const APP_NAME = 'vscode-luca';
 
 export const API_URL = process.env.NEXT_PUBLIC_API_URL as string;
-export const GITHUB_ID = process.env.NEXT_PUBLIC_GITHUB_ID as string;
-export const GITHUB_SECRET = process.env.NEXT_PUBLIC_GITHUB_SECRET as string;
-export const NEXTAUTH_URL = process.env.NEXT_PUBLIC_NEXTAUTH_URL as string;
-export const NEXTAUTH_SECRET = process.env.NEXT_PUBLIC_NEXTAUTH_SECRET as string;
+export const GITHUB_ID = process.env.GITHUB_ID as string;
+export const GITHUB_SECRET = process.env.GITHUB_SECRET as string;
+export const NEXTAUTH_URL = process.env.NEXTAUTH_URL as string;
+export const NEXTAUTH_SECRET = process.env.NEXTAUTH_SECRET as string;
 export const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN as string;
-export const ENVIRONMENT = process.env.NODE_ENV as string;
-export const MOCK_ENABLED = process.env.NEXT_PUBLIC_API_MOCKING as string;
 
 export const DEFAULT_PUBLIC_PAGE = '/login';
 export const DEFAULT_PRIVATE_PAGE = '/';
